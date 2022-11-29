@@ -1,0 +1,36 @@
+.main {
+    height: 100vh;
+    background-color: tan;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid;
+}
+
+.info {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    background-color: gray;
+}
+
+.info h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.info p {
+    margin-bottom: 0;
+}
+
+.info span, h1, p {
+    background-color: #bebebe;
+    margin-bottom: 10px;
+}
+
+.photo {
+    width: 400px;
+    height: 400px;
+    background-color: gray;
+}

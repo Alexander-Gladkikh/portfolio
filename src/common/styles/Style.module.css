@@ -1,0 +1,10 @@
+.container {
+    padding: 0 5%;
+}
+
+.button {
+    background-color: gray;
+    padding: 10px;
+    font-weight: bold;
+}
+

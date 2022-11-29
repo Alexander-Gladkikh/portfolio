@@ -1,0 +1,34 @@
+.myWork {
+    height: 100vh;
+    background-color: rgba(252, 190, 190, 0.76);
+
+}
+
+.icon {
+    width: 300px;
+    height: 300px;
+    background-color: #bebebe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconButton {
+    padding: 10px;
+    background-color: gray;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.info {
+    padding: 5px 15px;
+}
+
+.title {
+    background-color: #bebebe;
+}
+
+.description {
+    margin-top: 5px;
+    background-color: #bebebe;
+}

@@ -1,0 +1,21 @@
+.freelance {
+    height: 25vh;
+    background-color: #fcefb0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title {
+    background-color: #bebebe;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.button {
+    background-color: gray;
+    padding: 10px;
+    font-weight: bold;
+}

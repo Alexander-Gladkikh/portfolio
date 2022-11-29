@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.footerWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    margin: 50px;
+}
+
+.footerBlock {
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+}
