@@ -1,0 +1,67 @@
+@import '../../common/styles/sass/variable';
+@import '../../common/styles/sass/mixins';
+
+
+.main {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  &::before {
+    @include pseudo();
+    height: 200%;
+    width: 100%;
+    transform: rotate(-15deg);
+    left: -83%;
+    top: -50%;
+    z-index: -1;
+    background-color: $primaryColor;
+  }
+  .photo {
+    width: 33%;
+    height: calc(100vh - 80px);
+    background-image: url("../../assets/images/dark.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 30px;
+    box-shadow: 0 0 7px rgb(0 0 0 / 90%);
+  }
+  .info {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    & h1 {
+      @include fontSettings(51px, 62px, 700, $primaryColor);
+      margin: 18px 0 10px;
+      position: relative;
+      padding-left: 70px;
+      &::before {
+        @include pseudo();
+        left: 0;
+        top: 29px;
+        height: 4px;
+        width: 40px;
+        border-radius: 10px;
+        background-color: $primaryColor;
+      }
+    }
+    & span {
+      @include fontSettings(41px, 62px, 700, $textColor);
+      text-transform: uppercase;
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+

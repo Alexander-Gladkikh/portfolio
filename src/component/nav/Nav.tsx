@@ -1,20 +1,20 @@
 import React from 'react';
-import s from './Nav.module.css'
+import s from './Nav.module.scss'
 
 function Nav() {
     return (
         <ul className={s.nav}>
             <li className={s.navItem}>
-                <a href="">Главная</a>
+                <a href="">Home</a>
             </li>
             <li className={s.navItem}>
-                <a href="">Скиллы</a>
+                <a href="">About Me</a>
             </li>
             <li className={s.navItem}>
-                <a href="">Работы</a>
+                <a href="">Portfolio</a>
             </li>
             <li className={s.navItem}>
-                <a href="">Контакты</a>
+                <a href="">Contacts</a>
             </li>
         </ul>
     );

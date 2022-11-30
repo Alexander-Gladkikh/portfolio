@@ -1,0 +1,32 @@
+@import '../../common/styles/sass/variable';
+@import '../../common/styles/sass/mixins';
+
+.nav {
+  position: fixed;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  transform: translateY(-50%);
+  .navItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 50px;
+    background-color: $primaryColor;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    a {
+      @include font-source-sans(15px, $textColor, 500);
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
+  }
+
+}
+
+
+

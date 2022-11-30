@@ -7,12 +7,13 @@ import MyWorks from "./component/myWorks/MyWorks";
 import Freelance from "./component/freelance/freelance";
 import Contacts from "./component/contacts/Contacts";
 import Footer from "./component/footer/Footer";
+import Nav from "./component/nav/Nav";
 
 
 function App() {
     return (
         <div className="App">
-            <Header/>
+            <Nav/>
             <Main/>
             <Skills/>
            <MyWorks/>
