@@ -27,12 +27,13 @@
     background-position: top;
     border-radius: 30px;
     box-shadow: 0 0 7px rgb(0 0 0 / 90%);
+    margin-right: 125px;
   }
   .info {
-    max-width: 600px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+   // margin: 0 auto;
 
     & h1 {
       @include fontSettings(51px, 62px, 700, $primaryColor);
@@ -52,6 +53,11 @@
     & span {
       @include fontSettings(41px, 62px, 700, $textColor);
       text-transform: uppercase;
+    }
+    & p {
+      font-family: Open Sans,sans-serif;
+      font-size: 16px;
+      line-height: 35px;
     }
 
   }

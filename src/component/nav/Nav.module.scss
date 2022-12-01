@@ -6,32 +6,52 @@
   right: 30px;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   top: 50%;
   transform: translateY(-50%);
+
   .navItem {
-    display: block;
+    display: flex;
+    align-items: center;
     width: fit-content;
     margin-bottom: 20px;
-    height: 40px;
-    padding: 0 15px;
+    height: 35px;
+    padding: 0 8px;
     border-radius: 50px;
-    background-color: $primaryColor;
+    background-color: #2b2a2b;
+    &:hover {
+      background-color:$primaryColor;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
+
     a {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 100%;
       height: 100%;
-      @include font-source-sans(15px, $textColor, 500);
-      letter-spacing: 1.3px;
+      @include font-source-sans(12px, $textColor, 500);
       text-decoration: none;
       cursor: pointer;
+
+      &:hover {
+        letter-spacing: 1.3px;
+      }
+
+      &:hover span {
+        font-size: 12px;
+        margin-right: 5px;
+      }
+
       span {
+        font-size: 0;
+        transition: .3s;
       }
     }
+
     .image {
       height: 20px;
     }
