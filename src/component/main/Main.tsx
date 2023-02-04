@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Main.module.scss'
 import container from '../../common/styles/Style.module.css'
+import MyButton from "../MyButton/MyButton";
 
 function Main() {
     return (
@@ -14,7 +15,9 @@ function Main() {
                     clean & user‑friendly experiences,
                     I am passionate about building
                     excellent software that improves
-                    the lives of tho around me.</p>
+                    the lives of tho around me.
+                </p>
+                <MyButton> MORE ABOUT ME</MyButton>
             </div>
         </div>
     );
