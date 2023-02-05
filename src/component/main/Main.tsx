@@ -5,6 +5,7 @@ import {Button, Stack} from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import SendIcon from '@mui/icons-material/Send';
 import EastIcon from '@mui/icons-material/East';
+import MyButton from "../MyButton/MyButton";
 
 
 function Main() {
@@ -21,9 +22,7 @@ function Main() {
                     excellent software that improves
                     the lives of tho around me.
                 </p>
-                    <Button variant="outlined" startIcon={<EastIcon />}>
-                        Delete
-                    </Button>
+                <MyButton startIcon={<DeleteIcon/>}>Delete</MyButton>
             </div>
         </div>
     );
