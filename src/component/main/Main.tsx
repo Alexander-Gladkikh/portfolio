@@ -1,7 +1,11 @@
 import React from 'react';
 import s from './Main.module.scss'
 import container from '../../common/styles/Style.module.css'
-import MyButton from "../MyButton/MyButton";
+import {Button, Stack} from '@mui/material';
+import DeleteIcon from '@mui/icons-material/Delete';
+import SendIcon from '@mui/icons-material/Send';
+import EastIcon from '@mui/icons-material/East';
+
 
 function Main() {
     return (
@@ -17,7 +21,9 @@ function Main() {
                     excellent software that improves
                     the lives of tho around me.
                 </p>
-                <MyButton> MORE ABOUT ME</MyButton>
+                    <Button variant="outlined" startIcon={<EastIcon />}>
+                        Delete
+                    </Button>
             </div>
         </div>
     );
