@@ -9,6 +9,8 @@ import Contacts from "./component/contacts/Contacts";
 import Footer from "./component/footer/Footer";
 import NavigationList from "./component/nav/NavigationList";
 import MyButton from "./component/MyButton/MyButton";
+import Skill from "./component/skills/skill/Skill";
+import Indicator from "./component/Indicator/Indicator";
 
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
             <Freelance/>
             <Contacts />
             <Footer />
+
 
             {/*<MyButton> MORE ABOUT ME</MyButton>*/}
         </div>

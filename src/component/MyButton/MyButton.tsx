@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './right-arrow.svg'
+import logo from '../../assets/images/right-arrow.svg'
 import s from './MyButton.module.scss'
 
 const MyButton: React.FC<any> = ({children, ...props}) => {

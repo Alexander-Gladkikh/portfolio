@@ -1,0 +1,21 @@
+.svgIndicator {
+  width: 100px;
+  height: 100px;
+}
+
+.svgIndicatorTrack,
+.svgIndicatorIndication {
+  cx: 50px;
+  cy: 50px;
+  r: 40px;
+  fill: transparent;
+  stroke-width: 10px;
+}
+
+.svgIndicatorTrack {
+  stroke: #ddd;
+}
+
+.svgIndicatorIndication {
+  stroke: #07c;
+}
