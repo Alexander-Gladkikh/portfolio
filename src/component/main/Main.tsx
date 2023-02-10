@@ -8,8 +8,8 @@ function Main() {
         <div className={`${s.main} ${container.container}`}>
             <div className={s.photo}></div>
             <div className={s.info}>
-                <h1>I'M ALEXANDER.</h1>
-                <span>Front-end developer</span>
+                <h1 className={s.infoTitle} >I'M ALEXANDER.</h1>
+                <span className={s.infoSubtitle}>Front-end developer</span>
                 <p>I'm a Russian based front‑end
                     developer focused on crafting
                     clean & user‑friendly experiences,
@@ -19,6 +19,7 @@ function Main() {
                 </p>
                 <MyButton> MORE ABOUT ME</MyButton>
             </div>
+
         </div>
     );
 }

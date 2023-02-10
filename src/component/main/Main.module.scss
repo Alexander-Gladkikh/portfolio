@@ -33,9 +33,8 @@
     max-width: 500px;
     display: flex;
     flex-direction: column;
-   // margin: 0 auto;
 
-    & h1 {
+    & .infoTitle {
       @include fontSettings(51px, 62px, 700, $primaryColor);
       margin: 18px 0 10px;
       position: relative;
@@ -50,7 +49,7 @@
         background-color: $primaryColor;
       }
     }
-    & span {
+    & .infoSubtitle {
       @include fontSettings(41px, 62px, 700, $textColor);
       text-transform: uppercase;
     }
@@ -58,6 +57,7 @@
       font-family: Open Sans,sans-serif;
       font-size: 16px;
       line-height: 35px;
+      margin-bottom: 30px;
     }
 
   }

@@ -8,6 +8,7 @@ import Freelance from "./component/freelance/freelance";
 import Contacts from "./component/contacts/Contacts";
 import Footer from "./component/footer/Footer";
 import NavigationList from "./component/nav/NavigationList";
+import MyButton from "./component/MyButton/MyButton";
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
             <Freelance/>
             <Contacts />
             <Footer />
+
+            {/*<MyButton> MORE ABOUT ME</MyButton>*/}
         </div>
     );
 }

@@ -1,0 +1,48 @@
+@import '../../common/styles/sass/variable';
+
+.myButton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 55px;
+    border: 1px solid $primaryColor;
+    border-radius: 35px;
+
+    &::after {
+        content:'';
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 13px;
+        width: 0;
+        height: 100%;
+        background: $primaryColor;
+        border-radius: 35px;
+        transition: all .25s ease-in-out;
+     }
+    &:hover::after {
+        width: 95%;
+    }
+}
+
+.myButtonText {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    margin-right: 40px;
+}
+
+.myButtonImg {
+    position: absolute;
+    right: 0;
+    top: -1px;
+    width: 55px;
+    height: 55px;
+    padding: 17px;
+    border-radius: 50%;
+    background: $primaryColor;
+}
+
+/*transition: all .25s ease-in-out;*/
