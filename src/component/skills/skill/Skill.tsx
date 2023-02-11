@@ -13,6 +13,7 @@ function Skill(props: SkillPropsType) {
         <div className={s.skill}>
             <div className={s.skillContainer}>
                 <img className={s.skillIcon} src={props.images} />
+                <div className={s.skillDescription}>{props.description}</div>
             </div>
             <span className={s.skillTitle}>{props.title}</span>
         </div>

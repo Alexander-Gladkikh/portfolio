@@ -1,20 +1,36 @@
 @import '../../../common/styles/sass/variable';
+
 .skill {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+
+  &:hover {
+    cursor: pointer;
+
+  }
+  &:hover .skillContainer {
+    background-color: $primaryColor;
+    & img {
+      display: none;
+    }
+  }
+  &:hover .skillDescription {
+    display: block;
+  }
 }
+
 .skillContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 170px;
-  margin: 40px;
+  width: 180px;
+  height: 180px;
   border: 5px solid $primaryColor;
   border-radius: 50%;
-
+  margin-bottom: 10px;
 }
 
 .skillIcon {
@@ -24,4 +40,12 @@
 
 .skillTitle {
   font-size: 18px;
+}
+
+.skillDescription {
+  display: none;
+  font-size: 15px;
+  font-weight: lighter;
+  padding: 15px;
+  text-align: center;
 }
