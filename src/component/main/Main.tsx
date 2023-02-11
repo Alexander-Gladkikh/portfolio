@@ -22,7 +22,7 @@ function Main() {
                     excellent software that improves
                     the lives of tho around me.
                 </p>
-                <MyButton startIcon={<DeleteIcon/>}>Delete</MyButton>
+                <MyButton startIcon={<DeleteIcon/>}>About Me</MyButton>
             </div>
 
         </div>

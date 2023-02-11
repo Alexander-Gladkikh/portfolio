@@ -10,13 +10,15 @@
   flex-wrap: wrap;
   &::before {
     @include pseudo();
-    height: 200%;
-    width: 100%;
-    transform: rotate(-15deg);
-    left: -83%;
-    top: -50%;
-    z-index: -1;
-    background-color: $primaryColor;
+    width: 436px;
+    height: 172px;
+    background: #fdb301;
+    margin: auto;
+    transform: perspective(34px) rotateX(161deg) rotateY(324deg);
+    top: 454px;
+    z-index: 1;
+    border-radius: 20px;
+    left: 73px;
   }
   .photo {
     width: 33%;
@@ -28,6 +30,7 @@
     border-radius: 30px;
     box-shadow: 0 0 7px rgb(0 0 0 / 90%);
     margin-right: 125px;
+    z-index: 100;
   }
   .info {
     max-width: 500px;

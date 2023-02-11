@@ -1,44 +1,48 @@
 import React from 'react';
-import s from './Skills.module.css'
-import container from '../../common/styles/Style.module.css'
+import s from './Skills.module.scss'
 import Skill from "./skill/Skill";
-import {v1} from "uuid";
+import {
+    gitIcon,
+    htmlIcon,
+    reactIcon,
+    reduxIcon,
+    sassIcon,
+    storybookIcon,
+    testIcon,
+    typescriptIcon
+} from "../../assets/Data/images";
 
 const skillsData: skillType[] = [
-    {id: v1(), title: 'HTML5', description: 'Описание навыка', progress: 50, images: 'html-icon.svg'},
-    // {id: v1(), title: 'SASS/SCSS', description: 'Описание навыка', progress: 50, images: 'sass-icon.svg'},
-    // {id: v1(), title: 'JS/TS', description: 'Описание навыка', progress: 50, images: 'typescript-icon.svg'},
-    // {id: v1(), title: 'REACT', description: 'Описание навыка', progress: 50, images: 'react-icon.svg'},
-    // {id: v1(), title: 'REDUX', description: 'Описание навыка', progress: 50, images: 'redux-icon.svg'},
-    // {id: v1(), title: 'STORYBOOK', description: 'Описание навыка', progress: 50, images: 'storybook-icon.svg'},
-    // {id: v1(), title: 'UNIT-TEST', description: 'Описание навыка', progress: 50, images: 'test-icon.svg'},
-    // {id: v1(), title: 'GIT', description: 'Описание навыка', progress: 50, images: 'git-icon.svg'},
+    {title: 'HTML5', description: 'Описание навыка', images: htmlIcon},
+    {title: 'SASS/SCSS', description: 'Описание навыка', images: sassIcon},
+    {title: 'JS/TS', description: 'Описание навыка', images: typescriptIcon},
+    {title: 'REACT', description: 'Описание навыка', images: reactIcon},
+    {title: 'REDUX', description: 'Описание навыка', images: reduxIcon},
+    {title: 'STORYBOOK', description: 'Описание навыка', images: storybookIcon},
+    {title: 'UNIT-TEST', description: 'Описание навыка', images: testIcon},
+    {title: 'GIT', description: 'Описание навыка', images: gitIcon},
 ]
 
 type skillType = {
-    id: string
     title: string
     description: string
-    progress: number
     images: string
 }
 
 function Skills() {
     return (
-        <div className={`${s.skills}`}>
-            <div className={container.container}>
+            <div className={s.skills}>
                 <div className={s.header}>
                     <h2>Мои скиллы</h2>
                 </div>
                 <div className={s.skillsBlock}>
                     {skillsData.map((el: skillType) => <Skill title={el.title}
                                                               description={el.description}
-                                                              progress={el.progress}
                                                               images={el.images}
                     />)}
                 </div>
             </div>
-        </div>
+
     )
 }
 
