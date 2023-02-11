@@ -5,7 +5,7 @@ import {Button, Stack} from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import SendIcon from '@mui/icons-material/Send';
 import EastIcon from '@mui/icons-material/East';
-import MyButton from "../MyButton/MyButton";
+import MyButton from "../UI/MyButton/MyButton";
 
 
 function Main() {

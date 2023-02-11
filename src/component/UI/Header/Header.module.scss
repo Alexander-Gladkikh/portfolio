@@ -1,0 +1,16 @@
+@import '../../../common/styles/sass/variable';
+
+
+.header {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.headerText {
+    font-size: 36px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    & span {
+        color: $primaryColor
+    }
+}

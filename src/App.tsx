@@ -3,14 +3,11 @@ import './App.css';
 import Header from "./component/header/Header";
 import Main from "./component/main/Main";
 import Skills from "./component/skills/Skills";
-import MyWorks from "./component/myWorks/MyWorks";
+import MyPortfolio from "./component/myWorks/MyPortfolio";
 import Freelance from "./component/freelance/freelance";
 import Contacts from "./component/contacts/Contacts";
 import Footer from "./component/footer/Footer";
 import NavigationList from "./component/nav/NavigationList";
-import MyButton from "./component/MyButton/MyButton";
-import Skill from "./component/skills/skill/Skill";
-import Indicator from "./component/Indicator/Indicator";
 
 
 function App() {
@@ -19,13 +16,10 @@ function App() {
             <Main/>
             <NavigationList/>
             <Skills/>
-           <MyWorks/>
+            <MyPortfolio/>
             <Freelance/>
-            <Contacts />
-            <Footer />
-
-
-            {/*<MyButton> MORE ABOUT ME</MyButton>*/}
+            <Contacts/>
+            <Footer/>
         </div>
     );
 }
