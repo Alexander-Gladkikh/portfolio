@@ -9,7 +9,7 @@ import {Header} from "../UI/Header/Header";
 function MyPortfolio() {
     return (
         <div className={`${s.myWork} ${container.container}`}>
-            <Header text={'PORTFOLIO'}/>
+            <Header textStart={'MY'} textEnd={'PORTFOLIO'}/>
             <div className={s.worksBlock}>
                 <Work title={'Название проекта'} description={'Описание проекта'}/>
                 <Work title={'Название проекта'} description={'Описание проекта'}/>

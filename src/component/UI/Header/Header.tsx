@@ -2,12 +2,13 @@ import s from "./Header.module.scss";
 import React from "react";
 
 type HeaderPropsType = {
-    text: string
+    textStart: string
+    textEnd: string
 }
-export const Header = (props: HeaderPropsType) => {
+export const Header: React.FC<HeaderPropsType> = ({textStart, textEnd}) => {
     return (
         <div className={s.header}>
-            <h2 className={s.headerText}>MY <span>{props.text}</span></h2>
+            <h2 className={s.headerText}>{textStart} <span>{textEnd}</span></h2>
         </div>
     )
 }

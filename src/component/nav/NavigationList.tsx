@@ -1,20 +1,23 @@
 import React from 'react';
 import s from './Nav.module.scss'
 import homeImage from '../../assets/images/home.svg';
-import aboutImage from '../../assets/images/about-me.svg';
+import mySkills from '../../assets/images/my-skills.svg';
 import portfolioImage from '../../assets/images/portfolio.svg';
 import contactsImage from '../../assets/images/contacts.svg';
 import {NavigationItem} from "./NavigationItem";
+import { NavigationItemType } from '../../assets/Data/NavigationData/NavigationData';
 
-function NavigationList() {
+type NavigationListPropsType = {
+    navigationListData: NavigationItemType[]
+}
+
+const NavigationList: React.FC<NavigationListPropsType> = ({navigationListData}) => {
 
     return (
         <ul className={s.nav}>
-            <NavigationItem title={'HOME'} sourceImage={homeImage}/>
-            <NavigationItem title={'ABOUT ME'} sourceImage={aboutImage}/>
-            <NavigationItem title={'PORTFOLIO'} sourceImage={portfolioImage}/>
-            <NavigationItem title={'CONTACTS'} sourceImage={contactsImage}/>
-
+            {navigationListData.map((el:NavigationItemType) => {
+                return <NavigationItem title={el.title} sourceImage={el.images}/>
+            })}
         </ul>
     );
 }

@@ -1,10 +1,7 @@
 import React from 'react';
 import s from './Main.module.scss'
 import container from '../../common/styles/Style.module.css'
-import {Button, Stack} from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
-import SendIcon from '@mui/icons-material/Send';
-import EastIcon from '@mui/icons-material/East';
 import MyButton from "../UI/MyButton/MyButton";
 
 
