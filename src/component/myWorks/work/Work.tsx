@@ -3,23 +3,23 @@ import s from './work.module.css';
 import style from '../../../common/styles/Style.module.css';
 
 
-type SkillPropsType = {
+type WorkPropsType = {
     title: string
     description: string
 }
 
-function Skills(props: SkillPropsType) {
+const Work: React.FC <WorkPropsType> = ({title, description}) => {
     return (
         <div className={s.skill}>
             <div className={s.icon}>
                 <button className={style.button}>Смотреть</button>
             </div>
             <div className={s.info}>
-                <span className={s.title}>{props.title}</span>
-                <p className={s.description}>{props.description}</p>
+                <span className={s.title}>{title}</span>
+                <p className={s.description}>{description}</p>
             </div>
         </div>
     );
 }
 
-export default Skills;
+export default Work;
