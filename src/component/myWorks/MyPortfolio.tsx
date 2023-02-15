@@ -14,7 +14,7 @@ const MyPortfolio: React.FC<MyPortfolioPropsType> = ({MyProfileData}) => {
             <Header textStart={'MY'} textEnd={'PORTFOLIO'}/>
             <div className={s.worksBlock}>
                 {MyProfileData.map((el:WorkType) => {
-                    return <Work title={el.title} description={el.description}/>
+                    return <Work title={el.title} description={el.description} images={el.images}/>
                 })}
 
             </div>

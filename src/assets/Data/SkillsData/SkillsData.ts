@@ -7,7 +7,6 @@ import storybookIcon from '../../images/skills-icon/storybook-icon.svg'
 import testIcon from '../../images/skills-icon/test-icon.svg'
 import typescriptIcon from '../../images/skills-icon/typescript-icon.svg'
 
-export {htmlIcon, gitIcon, reactIcon, reduxIcon, sassIcon, storybookIcon, testIcon, typescriptIcon}
 
 export const skillsData: SkillType[] = [
     {
