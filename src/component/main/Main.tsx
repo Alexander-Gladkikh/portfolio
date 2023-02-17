@@ -1,8 +1,8 @@
 import React from 'react';
 import s from './Main.module.scss'
 import container from '../../common/styles/Style.module.css'
-import DeleteIcon from '@mui/icons-material/Delete';
 import MyButton from "../UI/MyButton/MyButton";
+import icon from '../../assets/images/right-arrow.svg'
 
 
 function Main() {
@@ -19,7 +19,7 @@ function Main() {
                     excellent software that improves
                     the lives of tho around me.
                 </p>
-                <MyButton startIcon={<DeleteIcon/>}>About Me</MyButton>
+                <MyButton icon={icon}>About Me</MyButton>
             </div>
 
         </div>

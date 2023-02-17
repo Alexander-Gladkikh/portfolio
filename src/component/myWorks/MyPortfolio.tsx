@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './MyWorks.module.css'
+import s from './MyWorks.module.scss'
 import Work from "./work/Work";
 import container from '../../common/styles/Style.module.css'
 import {Header} from "../UI/Header/Header";

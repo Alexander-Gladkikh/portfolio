@@ -1,19 +1,33 @@
 import React from 'react';
 import s from './Footer.module.css';
 import style from '../../common/styles/Style.module.css'
+import vkIcon from '../../assets/images/social-icon/vk-icon.svg'
+import gitHubIcon from '../../assets/images/social-icon/github-icon.svg'
+import telegrammIcon from '../../assets/images/social-icon/telegramm-icon.svg'
+
+const icons = [vkIcon, gitHubIcon, telegrammIcon]
 
 function Footer() {
     return (
-       <div className={`${s.footer} ${style.container}`}>
-           <span className={s.title}>Иван Иванов</span>
-           <div className={s.footerWrapper}>
-               <div className={s.footerBlock}></div>
-               <div className={s.footerBlock}></div>
-               <div className={s.footerBlock}></div>
-               <div className={s.footerBlock}></div>
-           </div>
-           <span className={s.copyright}>все права защищены</span>
-       </div>
+        <div className={`${s.footer} ${style.container}`}>
+            <div className={s.copyright}>
+                <p>© 2023, All Rights Reserved</p>
+            </div>
+            <div className={s.socialNetworks}>
+                {icons.map((el) => {
+                    console.log(el)
+                    return(
+                        <ul>
+                        <li>
+                            <a href="#">
+                                <img className={s.icon} src={el} alt={el}/>
+                            </a>
+                        </li>
+                    </ul>
+                    )
+                })}
+            </div>
+        </div>
     );
 }
 

@@ -4,7 +4,7 @@ import reactTasksIcon from '../../images/works-images/react-tasks.jpg'
 import counterIcon from '../../images/works-images/counter.jpg'
 import futureIcon from '../../images/works-images/future.jpg'
 
-export const MyPortfolioData: WorkType[] = [
+export const myPortfolioData: WorkType[] = [
     {
         title: 'THE SOCIAL NETWORK',
         description: 'React, TS, Redux, Rest API, Thunk, ANT Design, Unit Tests',

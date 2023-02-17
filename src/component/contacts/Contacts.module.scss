@@ -1,0 +1,66 @@
+@import "../../common/styles/sass/variable";
+
+.contacts {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.dataAndForm {
+  display: flex;
+  margin-top: 30px;
+}
+
+.data {
+  width: 33%;
+}
+
+.dataHeader {
+  font-size: 26px;
+  text-align: left;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.dataText {
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.formContainer {
+  padding-left: 45px;
+}
+
+.form {
+  & input, textarea {
+    border: 1px solid #111;
+    width: 100%;
+    background: #252525;
+    color: #fff;
+    padding: 11px 26px;
+    border-radius: 30px;
+    outline: none !important;
+    transition: .3s;
+    margin-bottom: 20px;
+    &::placeholder {
+      font-size: 18px;
+    }
+    &:focus {
+      border: 1px solid $primaryColor
+    }
+  }
+  & textarea {
+    height: 200px;
+  }
+}
+
+
+
+
+
+
+
+
