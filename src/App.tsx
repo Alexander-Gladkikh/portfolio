@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Main from "./component/main/Main";
 import Skills from "./component/skills/Skills";
-import MyPortfolio from "./component/myWorks/MyPortfolio";
+import MyProjects from "./component/myWorks/MyProjects";
 import Freelance from "./component/freelance/freelance";
 import Contacts from "./component/contacts/Contacts";
 import Footer from "./component/footer/Footer";
@@ -19,7 +19,7 @@ function App() {
             <Main/>
             <NavigationList navigationListData={navigationListData}/>
             <Skills skillsData={skillsData}/>
-            <MyPortfolio MyProfileData={myPortfolioData}/>
+            <MyProjects MyProfileData={myPortfolioData}/>
             {/*<Freelance/>*/}
             <Contacts contactsData={contactsData}/>
             <Footer/>

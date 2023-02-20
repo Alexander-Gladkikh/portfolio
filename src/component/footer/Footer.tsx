@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Footer.module.css';
+import s from './Footer.module.scss';
 import style from '../../common/styles/Style.module.css'
 import vkIcon from '../../assets/images/social-icon/vk-icon.svg'
 import gitHubIcon from '../../assets/images/social-icon/github-icon.svg'
