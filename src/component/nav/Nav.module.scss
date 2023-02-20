@@ -17,7 +17,6 @@
     width: fit-content;
     margin-bottom: 20px;
     height: 35px;
-    padding: 0 8px;
     border-radius: 50px;
     background-color: #2b2a2b;
     &:hover {
@@ -44,7 +43,7 @@
 
       &:hover span {
         font-size: 12px;
-        margin-right: 5px;
+        margin-left: 10px;
       }
 
       span {
@@ -55,6 +54,7 @@
 
     .image {
       height: 20px;
+      margin: 0 8px;
     }
   }
 
