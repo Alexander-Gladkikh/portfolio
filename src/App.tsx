@@ -3,7 +3,6 @@ import './App.css';
 import Main from "./component/main/Main";
 import Skills from "./component/skills/Skills";
 import MyProjects from "./component/myWorks/MyProjects";
-import Freelance from "./component/freelance/freelance";
 import Contacts from "./component/contacts/Contacts";
 import Footer from "./component/footer/Footer";
 import NavigationList from "./component/nav/NavigationList";

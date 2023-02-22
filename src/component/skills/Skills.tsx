@@ -3,7 +3,8 @@ import s from './Skills.module.scss'
 import Skill from "./skill/Skill";
 import {Header} from "../UI/Header/Header";
 import {SkillType} from "../../assets/Data/SkillsData/SkillsData";
-const Slide = require("react-reveal/Slide")
+import { Slide } from "react-awesome-reveal";
+
 
 type SkillsPropsType = {
     skillsData: SkillType[]
@@ -11,16 +12,18 @@ type SkillsPropsType = {
 
 const Skills: React.FC <SkillsPropsType> = ({skillsData}) => {
     return (
-        <div className={s.skills}>
+        <div id={'skills'} className={s.skills}>
             <Header textStart={'MY'} textEnd={'SKILLS'}/>
-            <Slide bottom>
+
             <div className={s.skillsBlock}>
-                {skillsData.map((el: SkillType) => <Skill title={el.title}
+                <Slide direction={'up'} triggerOnce cascade duration={600} damping={0.2}>
+                {skillsData.map((el: SkillType) => <Skill key={el.title} title={el.title}
                                                           description={el.description}
                                                           images={el.images}
                 />)}
+                </Slide >
             </div>
-            </Slide >
+
         </div>
 
     )

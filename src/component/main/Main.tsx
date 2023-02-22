@@ -4,17 +4,17 @@ import container from '../../common/styles/Style.module.css'
 import MyButton from "../UI/MyButton/MyButton";
 import icon from '../../assets/images/right-arrow.svg';
 
-const Fade = require("react-reveal/Fade");
-
+import {Fade} from "react-awesome-reveal";
 
 
 function Main() {
     return (
-        <div className={`${s.main} ${container.container}`}>
-            <Fade left>
-                <div className={s.photo}></div>
+        <div id={'main'} className={`${s.main} ${container.container}`}>
+            <Fade direction={'left'} triggerOnce>
+                <div className={s.photo}>
+                </div>
             </Fade>
-            <Fade right>
+            <Fade direction={'right'} triggerOnce>
                 <div className={s.info}>
                     <h1 className={s.infoTitle}>I'M ALEXANDER.</h1>
                     <span className={s.infoSubtitle}>Front-end developer</span>
@@ -29,6 +29,7 @@ function Main() {
                 </div>
             </Fade>
         </div>
+
     );
 }
 

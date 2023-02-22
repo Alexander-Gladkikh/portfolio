@@ -4,22 +4,23 @@ import Work from "./work/Work";
 import container from '../../common/styles/Style.module.css'
 import {Header} from "../UI/Header/Header";
 import {WorkType} from "../../assets/Data/MyPortfolioData/MyPortfolioData";
-const Fade = require("react-reveal/Fade")
+import {Fade} from "react-awesome-reveal";
+
 
 type MyPortfolioPropsType = {
     MyProfileData: WorkType[]
 }
 const MyProjects: React.FC<MyPortfolioPropsType> = ({MyProfileData}) => {
     return (
-        <div className={`${s.myWork} ${container.container}`}>
+        <div id={'myProjects'} className={`${s.myWork} ${container.container}`}>
             <Header textStart={'MY'} textEnd={'PORTFOLIO'}/>
-            <Fade bottom>
             <div className={s.worksBlock}>
-                {MyProfileData.map((el:WorkType) => {
-                    return <Work title={el.title} description={el.description} images={el.images}/>
+                <Fade direction={'up'} triggerOnce cascade duration={600} damping={0.2}>
+                {MyProfileData.map((el:WorkType, index) => {
+                    return <Work key={index} title={el.title} description={el.description} images={el.images}/>
                 })}
+                </Fade>
             </div>
-            </Fade>
         </div>
     );
 }

@@ -3,11 +3,12 @@
 
 
 .main {
-  position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
   &::before {
     @include pseudo();
     width: 436px;
@@ -16,26 +17,27 @@
     margin: auto;
     transform: perspective(34px) rotateX(161deg) rotateY(324deg);
     top: 454px;
-    z-index: 1;
+    z-index: -100;
     border-radius: 20px;
     left: 73px;
   }
+
   .photo {
-    width: 33%;
-    height: calc(100vh - 100px);
+    width: 400px;
+    height: calc(100vh - 200px);
+    border-radius: 30px;
+    box-shadow: 0 0 7px rgb(0 0 0 / 90%);
     background-image: url("../../assets/images/photo.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    border-radius: 30px;
-    box-shadow: 0 0 7px rgb(0 0 0 / 90%);
-    margin-right: 125px;
     z-index: 100;
   }
   .info {
     max-width: 500px;
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
 
     & .infoTitle {
       @include fontSettings(51px, 62px, 700, $primaryColor);
@@ -62,9 +64,10 @@
       line-height: 35px;
       margin-bottom: 30px;
     }
-
   }
 }
+
+
 
 
 

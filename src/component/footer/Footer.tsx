@@ -14,18 +14,17 @@ function Footer() {
                 <p>© 2023, All Rights Reserved</p>
             </div>
             <div className={s.socialNetworks}>
+                <ul>
                 {icons.map((el) => {
-                    console.log(el)
                     return(
-                        <ul>
-                        <li>
+                        <li key={el}>
                             <a href="#">
                                 <img className={s.icon} src={el} alt={el}/>
                             </a>
                         </li>
-                    </ul>
                     )
                 })}
+                </ul>
             </div>
         </div>
     );

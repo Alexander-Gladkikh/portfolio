@@ -1,22 +1,32 @@
 import React from "react";
 import s from "./Nav.module.scss";
+import {Link} from "react-scroll";
 
 type NavigationItemPropsType = {
     title: string
     sourceImage: string
+    id: string
 }
 export const NavigationItem:React.FC<NavigationItemPropsType> = (
     {
         title,
-        sourceImage
+        sourceImage,
+        id
     }
 ) => {
     return (
         <li className={s.navItem}>
-            <a href="#">
+            <Link
+                activeClass={s.active}
+                to={id}
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+            >
                 <span>{title}</span>
                 <img className={s.image} src={sourceImage} alt="Image Home"/>
-            </a>
+            </Link>
         </li>
     );
 }

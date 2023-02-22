@@ -4,13 +4,14 @@ import portfolioImage from "../../images/portfolio.svg";
 import contactsImage from "../../images/contacts.svg";
 
 export const navigationListData: NavigationItemType[] = [
-    {title: 'HOME', images: homeImage},
-    {title: 'MY SKILLS', images: mySkills},
-    {title: 'PORTFOLIO', images: portfolioImage},
-    {title: 'CONTACTS', images: contactsImage},
+    {id: 'main', title: 'HOME', images: homeImage},
+    {id: 'skills', title: 'MY SKILLS', images: mySkills},
+    {id: 'myProjects', title: 'PORTFOLIO', images: portfolioImage},
+    {id: 'contacts', title: 'CONTACTS', images: contactsImage},
 ]
 
 export type NavigationItemType = {
     title: string
     images: string
+    id: string
 }
