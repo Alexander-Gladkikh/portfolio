@@ -1,10 +1,13 @@
 @import './common/styles/sass/mixins.scss';
 @import './common/styles/sass/variable.scss';
 
+
+
+
 body {
   margin: 0;
   @include font-source-sans(15px, $textColor, 500);
-  background-color: $bgColor;
+  background-color: var(#{--body-background-default});
 
 
 
