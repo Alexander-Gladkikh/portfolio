@@ -55,7 +55,7 @@
       }
     }
     & .infoSubtitle {
-      @include fontSettings(41px, 62px, 700, $textColor);
+      @include fontSettings(41px, 62px, 700, var(#{--text-color-default}));
       text-transform: uppercase;
     }
     & p {
@@ -63,6 +63,7 @@
       font-size: 16px;
       line-height: 35px;
       margin-bottom: 30px;
+      color: var(#{--text-color-default});
     }
   }
 }

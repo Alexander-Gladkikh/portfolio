@@ -31,4 +31,4 @@ const Skills: React.FC <SkillsPropsType> = ({skillsData}) => {
 
 export default Skills;
 
-//export default Header;
+//export default Settings;

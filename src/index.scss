@@ -8,6 +8,7 @@ body {
   margin: 0;
   @include font-source-sans(15px, $textColor, 500);
   background-color: var(#{--body-background-default});
+  color: var(#{--text-color-default});
 
 
 

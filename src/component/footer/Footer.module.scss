@@ -1,10 +1,11 @@
+@import '../../common/styles/sass/variable';
+
 .footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100px;
     padding: 0 70px;
-    background-color: #252525;
 }
 
 .icon {
@@ -16,4 +17,22 @@
     display: flex;
     gap: 40px;
     cursor: pointer;
+}
+
+.socialNetworksLists {
+    display: flex;
+    gap: 20px;
+
+    & a {
+        color: inherit;
+    }
+}
+.socialNetworksItem {
+    height: 30px;
+    & svg {
+        height: 100%;
+        &:hover {
+            color: $primaryColor;
+        }
+    }
 }

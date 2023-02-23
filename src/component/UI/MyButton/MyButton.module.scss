@@ -30,7 +30,7 @@
 .myButtonText {
     font-size: 15px;
     font-weight: 600;
-    color: #fff;
+    color: var(#{--text-color-default});
     margin-right: 40px;
     text-transform: uppercase;
 }

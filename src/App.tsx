@@ -10,19 +10,18 @@ import {skillsData} from "./assets/Data/SkillsData/SkillsData";
 import {navigationListData} from "./assets/Data/NavigationData/NavigationData";
 import {myPortfolioData} from "./assets/Data/MyPortfolioData/MyPortfolioData";
 import {contactsData} from "./assets/Data/ContactsData/ContactsData";
-import Header from "./component/header/Header";
+import Settings from "./component/settings/Settings";
 
 
 function App() {
     return (
         <div className="App">
-            <Header/>
-            {/*<Main/>*/}
-            {/*<NavigationList navigationListData={navigationListData}/>*/}
-            {/*<Skills skillsData={skillsData}/>*/}
-            {/*<MyProjects MyProfileData={myPortfolioData}/>*/}
-            {/*<Contacts contactsData={contactsData}/>*/}
-            {/*<Footer/>*/}
+            <Main/>
+            <NavigationList navigationListData={navigationListData}/>
+            <Skills skillsData={skillsData}/>
+            <MyProjects MyProfileData={myPortfolioData}/>
+            <Contacts contactsData={contactsData}/>
+            <Footer/>
         </div>
     );
 }

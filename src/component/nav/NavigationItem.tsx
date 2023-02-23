@@ -21,12 +21,13 @@ export const NavigationItem:React.FC<NavigationItemPropsType> = (
                 to={id}
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-100}
                 duration={500}
             >
                 <span>{title}</span>
-                <img className={s.image} src={sourceImage} alt="Image Home"/>
+                <img className={s.image} src={sourceImage} />
             </Link>
         </li>
     );
 }
+

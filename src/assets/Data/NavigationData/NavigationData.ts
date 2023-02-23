@@ -12,6 +12,11 @@ export const navigationListData: NavigationItemType[] = [
 
 export type NavigationItemType = {
     title: string
-    images: string
+    images: any
     id: string
 }
+
+// <FontAwesomeIcon icon="fa-solid faHouse" />
+// <FontAwesomeIcon icon="fa-solid fa-user-tie" />
+// <FontAwesomeIcon icon="fa-solid fa-briefcase" />
+// <FontAwesomeIcon icon="fa-solid fa-envelope-open" />

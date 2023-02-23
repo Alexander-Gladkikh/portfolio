@@ -39,20 +39,23 @@
   & input, textarea {
     border: 1px solid #111;
     width: 100%;
-    background: #252525;
-    color: #fff;
+    background: var(#{--form-background-color-default});
+    //color: #252526;
     padding: 11px 26px;
     border-radius: 30px;
     outline: none !important;
     transition: .3s;
     margin-bottom: 20px;
+
     &::placeholder {
       font-size: 18px;
     }
+
     &:focus {
       border: 1px solid $primaryColor
     }
   }
+
   & textarea {
     height: 200px;
   }

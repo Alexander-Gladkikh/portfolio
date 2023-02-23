@@ -5,6 +5,7 @@ import MyButton from "../UI/MyButton/MyButton";
 import icon from '../../assets/images/right-arrow.svg';
 
 import {Fade} from "react-awesome-reveal";
+import {Header} from "../UI/Header/Header";
 
 
 function Main() {

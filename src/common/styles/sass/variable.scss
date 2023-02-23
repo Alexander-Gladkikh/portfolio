@@ -2,10 +2,15 @@
 $textColor: #fff;
 $primaryColor: #fdb301;
 $bgColor: #111112;
-
+// body-color
 $body-background-dark: #000;
-$body-background-light: #fff;
-
+$body-background-light: #fdfdfe;
+// text-color
+$text-color-dark: #fff;
+$text-color-light: #666;
+// form-background-color
+$form-background-color-dark: #252526;
+$form-background-color-light: #fff;
 
 :root {
   // body-background
@@ -14,6 +19,12 @@ $body-background-light: #fff;
   --body-background-default: var(#{--body-background-dark});
 
   // text-color
+  --text-color-dark: #{$text-color-dark};
+  --text-color-light: #{$text-color-light};
+  --text-color-default: var(#{--text-color-dark});
 
-
+// form-background-color
+  --form-background-color-dark: #{$form-background-color-dark};
+  --form-background-color-light: #{$form-background-color-light};
+  --form-background-color-default: var(#{--form-background-color-default});
 }

@@ -1,0 +1,17 @@
+.settings {
+    position: absolute;
+    top: -200px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: grey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

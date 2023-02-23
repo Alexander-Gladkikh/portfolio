@@ -6,6 +6,7 @@ import portfolioImage from '../../assets/images/portfolio.svg';
 import contactsImage from '../../assets/images/contacts.svg';
 import {NavigationItem} from "./NavigationItem";
 import { NavigationItemType } from '../../assets/Data/NavigationData/NavigationData';
+import Settings from "../settings/Settings";
 
 type NavigationListPropsType = {
     navigationListData: NavigationItemType[]
@@ -14,11 +15,17 @@ type NavigationListPropsType = {
 const NavigationList: React.FC<NavigationListPropsType> = ({navigationListData}) => {
 
     return (
-        <ul className={s.nav}>
-            {navigationListData.map((el:NavigationItemType) => {
-                return <NavigationItem key={el.title} title={el.title} sourceImage={el.images} id={el.id}/>
-            })}
-        </ul>
+        <div>
+            <ul className={s.nav}>
+                <li className={s.settings}>
+                    <Settings/>
+                </li>
+                {navigationListData.map((el:NavigationItemType) => {
+                    return <NavigationItem key={el.title} title={el.title} sourceImage={el.images} id={el.id}/>
+                })}
+            </ul>
+        </div>
+
     );
 }
 
