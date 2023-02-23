@@ -3,15 +3,15 @@ $textColor: #fff;
 $primaryColor: #fdb301;
 $bgColor: #111112;
 
-$dark-color: #000;
-$light-color: #fff;
+$body-background-dark: #000;
+$body-background-light: #fff;
 
 
 :root {
   // body-background
   --body-background-dark: #{$body-background-dark};
   --body-background-light: #{$body-background-light};
-  --body-background-default: var(#{--body-background-light});
+  --body-background-default: var(#{--body-background-dark});
 
   // text-color
 
