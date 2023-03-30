@@ -16,7 +16,7 @@ export const myPortfolioData: WorkType[] = [
         images: todoListIcon
     },
     {
-        title: 'REACT TASKS',
+        title: 'REACT CARDS',
         description: 'React, TS, Redux, Rest API, Thunk, Unit Tests',
         images: reactTasksIcon
     },

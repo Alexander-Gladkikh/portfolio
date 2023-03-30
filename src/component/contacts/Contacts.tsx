@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Contacts.module.scss'
-import style from '../../common/styles/Style.module.css'
+import style from 'src/common/styles/Style.module.scss'
 import {Header} from "../UI/Header/Header";
 import DataBlock from "./DataBlock/DataBlock";
 import {ContactType} from "../../assets/Data/ContactsData/ContactsData";
@@ -16,7 +16,7 @@ type ContactsPropsType = {
 const Contacts: React.FC<ContactsPropsType> = ({contactsData}) => {
     return (
         <div id={'contacts'} className={`${s.contacts} ${style.container}`}>
-            <Header textStart={'GET IN'} textEnd={'TOUCH'}/>
+            <Header textStart={'GET IN'} textEnd={'TOUCH'} titleBg={'CONTACT'}/>
 
             <div className={s.dataAndForm}>
 

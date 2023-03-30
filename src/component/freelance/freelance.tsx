@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './freelance.module.css'
-import style from '../../common/styles/Style.module.css'
+import style from 'src/common/styles/Style.module.scss'
 
 function Freelance() {
     return (

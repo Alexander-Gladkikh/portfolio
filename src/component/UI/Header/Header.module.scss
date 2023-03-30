@@ -5,13 +5,29 @@
     display: block;
     margin: 0 auto 20px;
     color:var(#{--text-color-default});
+    position: relative;
 }
 
 .headerText {
-    font-size: 36px;
+    font-size: 56px;
     letter-spacing: 1.2px;
     text-transform: uppercase;
     & span {
         color: $primaryColor
     }
+}
+
+.titleBg {
+    font-size: 110px;
+    letter-spacing: 10px;
+    left: -25%;
+    line-height: .7;
+    position: absolute;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 800;
+    transform: translateY(-50%);
+    color: #6666;
+    opacity: 0.4;
+
 }

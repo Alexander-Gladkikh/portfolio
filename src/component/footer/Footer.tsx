@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Footer.module.scss';
-import style from '../../common/styles/Style.module.css';
+import style from 'src/common/styles/Style.module.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedin, faTelegram, faVk} from "@fortawesome/free-brands-svg-icons";
 
@@ -17,7 +17,7 @@ function Footer() {
             </div>
             <div className={s.socialNetworks}>
                 <ul className={s.socialNetworksLists}>
-                    {icons.map(el => <li className={s.socialNetworksItem}><FontAwesomeIcon icon={el}/></li>)}
+                    {icons.map((el, index) => <li key={index} className={s.socialNetworksItem}><FontAwesomeIcon icon={el}/></li>)}
                 </ul>
             </div>
         </div>

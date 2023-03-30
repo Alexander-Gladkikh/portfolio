@@ -13,7 +13,7 @@ type SkillsPropsType = {
 const Skills: React.FC <SkillsPropsType> = ({skillsData}) => {
     return (
         <div id={'skills'} className={s.skills}>
-            <Header textStart={'MY'} textEnd={'SKILLS'}/>
+            <Header textStart={'MY'} textEnd={'SKILLS'} titleBg={'SKILLS'}/>
 
             <div className={s.skillsBlock}>
                 <Slide direction={'up'} triggerOnce cascade duration={600} damping={0.2}>
