@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Contacts.module.scss'
-import style from 'src/common/styles/Style.module.scss'
+import style from '../../common/styles/Style.module.scss'
 import {Header} from "../UI/Header/Header";
 import DataBlock from "./DataBlock/DataBlock";
 import {ContactType} from "../../assets/Data/ContactsData/ContactsData";

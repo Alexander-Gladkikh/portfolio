@@ -15,11 +15,9 @@ type NavigationListPropsType = {
 const NavigationList: React.FC<NavigationListPropsType> = ({navigationListData}) => {
 
     return (
-        <div>
+        <div style={{position: "relative"}}>
+          <Settings/>
             <ul className={s.nav}>
-                <li className={s.settings}>
-                    <Settings/>
-                </li>
                 {navigationListData.map((el:NavigationItemType) => {
                     return <NavigationItem key={el.title} title={el.title} sourceImage={el.images} id={el.id}/>
                 })}

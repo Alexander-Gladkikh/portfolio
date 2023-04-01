@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Main.module.scss'
-import container from 'src/common/styles/Style.module.scss'
+import style from '../../common/styles/Style.module.scss'
 import MyButton from "../UI/MyButton/MyButton";
 import icon from '../../assets/images/right-arrow.svg';
 import Tilt from 'react-parallax-tilt';
@@ -11,7 +11,7 @@ import {Fade} from "react-awesome-reveal";
 
 function Main() {
     return (
-        <div id={'main'} className={`${s.main} ${container.container}`}>
+        <div id={'main'} className={`${s.main} ${style.container}`}>
             <Fade direction={'left'} triggerOnce>
                 <Tilt>
                     <div className={s.photo}></div>

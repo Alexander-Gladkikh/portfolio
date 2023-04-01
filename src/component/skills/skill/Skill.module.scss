@@ -49,3 +49,10 @@
   padding: 15px;
   text-align: center;
 }
+
+@media screen and (max-width: 992px) {
+  .skillContainer {
+    width: 150px;
+    height: 150px;
+  }
+}

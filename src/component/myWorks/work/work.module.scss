@@ -48,6 +48,17 @@
 }
 
 
+@media screen and (max-width: 992px) {
+  .myWork {
+    margin: 10px;
+  }
+}
 
+@media (max-width:740px) {
+  .myWork {
+    width: 430px;
+    height: 330px;
+  }
+}
 
 
