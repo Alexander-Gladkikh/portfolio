@@ -6,6 +6,10 @@ import sassIcon from '../../images/skills-icon/sass-icon.svg'
 import storybookIcon from '../../images/skills-icon/storybook-icon.svg'
 import testIcon from '../../images/skills-icon/test-icon.svg'
 import typescriptIcon from '../../images/skills-icon/typescript-icon.svg'
+import webpackIcon from '../../images/skills-icon/webpack.svg'
+import eslintIcon from '../../images/skills-icon/eslint.svg'
+import babelIcon from '../../images/skills-icon/babel.svg'
+import prettierIcon from '../../images/skills-icon/prettier.svg'
 
 
 export const skillsData: SkillType[] = [
@@ -49,6 +53,26 @@ export const skillsData: SkillType[] = [
         description: 'Creating new repositories, push- and pull-requets, merge, repos cloning',
         images: gitIcon
     },
+  {
+    title: 'WEBPACK',
+    description: 'Setting up a scalable Webpack configuration for optimized creation and pooling of resources',
+    images: webpackIcon
+  },
+  {
+    title: 'BABEL',
+    description: 'JavaScript compiler',
+    images: babelIcon
+  },
+  {
+    title: 'ESLINT',
+    description: 'ESLint statically analyzes your code to quickly find problems',
+    images: eslintIcon
+  },
+  {
+    title: 'PRETTIER',
+    description: 'Prettier is a code formatting tool that aims to use strictly defined rules for program formatting.',
+    images: prettierIcon
+  },
 ]
 
 export type SkillType = {
