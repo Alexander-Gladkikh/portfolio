@@ -6,16 +6,19 @@ type WorkPropsType = {
     title: string
     description: string
     images: string
+    links?: string
 }
 
-const Work: React.FC<WorkPropsType> = ({title, description, images}) => {
+const Work: React.FC<WorkPropsType> = ({title, description, images, links}) => {
     return (
         <div className={s.myWork}>
             <img className={s.img} src={images} alt=""/>
-            <div className={s.info}>
-                <span className={s.title}>{title}</span>
-                <p className={s.description}>{description}</p>
+            <a href={links}>
+             <div className={s.info}>
+               <span className={s.title}>{title}</span>
+               <p className={s.description}>{description}</p>
             </div>
+           </a>
         </div>
     );
 }

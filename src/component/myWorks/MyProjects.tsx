@@ -14,10 +14,22 @@ const MyProjects: React.FC<MyPortfolioPropsType> = ({MyProfileData}) => {
     return (
         <div id={'myProjects'} className={`${s.myWork} ${style.container}`}>
             <Header textStart={'MY'} textEnd={'PORTFOLIO'} titleBg={'MYWORK'}/>
-            <div className={s.worksBlock}>
-                <Fade direction={'up'} triggerOnce cascade duration={600} damping={0.2}>
-                {MyProfileData.map((el:WorkType, index) => {
-                    return <Work key={index} title={el.title} description={el.description} images={el.images}/>
+                <div className={s.worksBlock}>
+                    <Fade
+                        direction={'up'}
+                        triggerOnce
+                        cascade
+                        duration={600}
+                        damping={0.2}
+                     >
+                        {MyProfileData.map((el:WorkType, index) => {
+                          return <Work
+                               key={index}
+                               title={el.title}
+                               description={el.description}
+                               images={el.images}
+                               links={el.links}
+                      />
                 })}
                 </Fade>
             </div>
